@@ -74,6 +74,8 @@ function usarMicroondas(prato, tempo) {
       return fazerFeijao(tempo);
     case "brigadeiro":
       return fazerBrigadeiro(tempo);
+    default:
+      return "Prato inexistente 😕";
   }
 }
 
@@ -101,3 +103,5 @@ console.log(usarMicroondas("brigadeiro", 5));
 console.log(usarMicroondas("brigadeiro", 8));
 console.log(usarMicroondas("brigadeiro", 18));
 console.log(usarMicroondas("brigadeiro", 30));
+console.log(" ------------- ------------- ");
+console.log(usarMicroondas("pizza", 10));
