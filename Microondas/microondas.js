@@ -3,12 +3,12 @@ function usarMicroondas(prato, tempo) {
     switch (true) {
       case tempo < 10:
         return "Tempo insuficiente. 😞";
-      case tempo >= 20:
+      case tempo >= 20 && tempo < 30:
         return "A comida queimou. ☹️";
       case tempo >= 30:
         return "Kabum!🔥";
       default:
-        return "Prato pronto, bom apetite!!! 🍿";
+        return "Prato pronto, bom apetite!!! 🍝";
     }
   };
 
@@ -16,7 +16,7 @@ function usarMicroondas(prato, tempo) {
     switch (true) {
       case tempo < 8:
         return "Tempo insuficiente. 😞";
-      case tempo >= 16:
+      case tempo >= 16 && tempo < 24:
         return "A comida queimou. ☹️";
       case tempo >= 24:
         return "Kabum!🔥";
@@ -29,7 +29,7 @@ function usarMicroondas(prato, tempo) {
     switch (true) {
       case tempo < 15:
         return "Tempo insuficiente. 😞";
-      case tempo >= 30:
+      case tempo >= 30 && tempo < 45:
         return "A comida queimou. ☹️";
       case tempo >= 45:
         return "Kabum!🔥";
@@ -42,7 +42,7 @@ function usarMicroondas(prato, tempo) {
     switch (true) {
       case tempo < 12:
         return "Tempo insuficiente. 😞";
-      case tempo >= 24:
+      case tempo >= 24 && tempo < 36:
         return "A comida queimou. ☹️";
       case tempo >= 36:
         return "Kabum!🔥";
@@ -55,7 +55,7 @@ function usarMicroondas(prato, tempo) {
     switch (true) {
       case tempo < 8:
         return "Tempo insuficiente. 😞";
-      case tempo >= 16:
+      case tempo >= 16 && tempo < 24:
         return "A comida queimou. ☹️";
       case tempo >= 24:
         return "Kabum!🔥";
@@ -77,13 +77,27 @@ function usarMicroondas(prato, tempo) {
   }
 }
 
+console.log(usarMicroondas("pipoca", 8));
 console.log(usarMicroondas("pipoca", 10));
 console.log(usarMicroondas("pipoca", 21));
+console.log(usarMicroondas("pipoca", 32));
+console.log(" ------------- ------------- ");
+console.log(usarMicroondas("macarrão", 6));
 console.log(usarMicroondas("macarrão", 8));
+console.log(usarMicroondas("macarrão", 18));
 console.log(usarMicroondas("macarrão", 26));
-console.log(usarMicroondas("carne", 15));
+console.log(" ------------- ------------- ");
 console.log(usarMicroondas("carne", 8));
-console.log(usarMicroondas("feijão", 12));
+console.log(usarMicroondas("carne", 15));
+console.log(usarMicroondas("carne", 32));
+console.log(usarMicroondas("carne", 50));
+console.log(" ------------- ------------- ");
 console.log(usarMicroondas("feijão", 10));
+console.log(usarMicroondas("feijão", 12));
+console.log(usarMicroondas("feijão", 25));
+console.log(usarMicroondas("feijão", 40));
+console.log(" ------------- ------------- ");
+console.log(usarMicroondas("brigadeiro", 5));
 console.log(usarMicroondas("brigadeiro", 8));
 console.log(usarMicroondas("brigadeiro", 18));
+console.log(usarMicroondas("brigadeiro", 30));
